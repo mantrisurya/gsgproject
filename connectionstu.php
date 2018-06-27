@@ -1,0 +1,18 @@
+
+<?php
+ 
+ 
+function Connect()
+{
+ $dbhost = "localhost";
+ $dbuser = "root";
+ $dbpass = "";
+ $dbname = "project";
+ 
+ // Create connection
+ $conn = new mysqli ($dbhost, $dbuser, $dbpass, $dbname) or die($conn->connect_error);
+ $base_url='http://localhost/email_activation/';
+ return $conn;
+}
+ 
+?>
